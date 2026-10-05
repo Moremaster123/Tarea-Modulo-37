@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Café Aurora: café de especialidad recién tostado, directo a tu puerta cada mes. Tu primera bolsa con 50% de descuento.">
+    <title>Café Aurora | Café de especialidad a tu puerta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__content">
+            <a href="#" class="logo">Café Aurora</a>
+            <a href="#suscripcion" class="btn btn--small">Quiero mi café</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <p class="hero__tag">Oferta de lanzamiento</p>
+                <h1>Café de especialidad recién tostado, directo a tu puerta</h1>
+                <p class="hero__text">
+                    Recibe cada mes granos seleccionados de productores mexicanos,
+                    tostados la misma semana en que llegan a tu taza.
+                </p>
+                <a href="#suscripcion" class="btn">Obtener 50% en mi primera bolsa</a>
+                <p class="hero__note">Sin plazos forzosos. Cancela cuando quieras.</p>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>¿Por qué elegir Café Aurora?</h2>
+                <ul class="benefits__list">
+                    <li class="card">
+                        <h3>Siempre fresco</h3>
+                        <p>Tostamos tu café bajo pedido y lo enviamos en menos de 48 horas.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Origen directo</h3>
+                        <p>Trabajamos con fincas de Chiapas, Oaxaca y Veracruz a precio justo.</p>
+                    </li>
+                    <li class="card">
+                        <h3>A tu medida</h3>
+                        <p>Elige el tipo de molido y la frecuencia de entrega que prefieras.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <blockquote>
+                    <p>“Desde que me suscribí no he vuelto a comprar café en el súper. Se nota la diferencia desde el primer sorbo.”</p>
+                    <cite>Mariana G., suscriptora</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="cta" id="suscripcion">
+            <div class="container cta__content">
+                <h2>Empieza hoy con 50% de descuento</h2>
+                <p>Déjanos tu correo y te enviamos el cupón para tu primera bolsa.</p>
+                <form class="form" action="#gracias" method="get">
+                    <label for="email" class="sr-only">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    <button type="submit" class="btn">Quiero mi cupón</button>
+                </form>
+                <p class="form__success" id="gracias">¡Gracias! Revisa tu correo, tu cupón va en camino.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Café Aurora. Proyecto de práctica del Módulo 37 de EBAC.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+:root {
+    --color-primary: #c2410c;
+    --color-primary-dark: #9a3412;
+    --color-dark: #2b1d16;
+    --color-text: #4a3b33;
+    --color-light: #fdf8f3;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-light);
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-dark);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn--small {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 8px rgba(43, 29, 22, 0.08);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    padding: 64px 0;
+    text-align: center;
+    color: var(--color-white);
+    background: linear-gradient(135deg, #2b1d16 0%, #6b3a1f 60%, #c2410c 100%);
+}
+
+.hero__content {
+    max-width: 760px;
+}
+
+.hero__tag {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 4px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-dark);
+    background-color: #fbbf24;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.hero__text {
+    font-size: 18px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.hero__note {
+    margin-top: 16px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Beneficios */
+.benefits {
+    padding: 64px 0;
+}
+
+.benefits__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    list-style: none;
+}
+
+.card {
+    padding: 24px;
+    background-color: var(--color-white);
+    border-top: 4px solid var(--color-primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(43, 29, 22, 0.06);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* Testimonio */
+.testimonial {
+    padding: 48px 0;
+    text-align: center;
+    background-color: #f5e9dc;
+}
+
+.testimonial blockquote {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--color-dark);
+    margin-bottom: 12px;
+}
+
+.testimonial cite {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Llamada a la acción */
+.cta {
+    padding: 64px 0;
+    text-align: center;
+}
+
+.cta__content {
+    max-width: 640px;
+}
+
+.cta h2 {
+    margin-bottom: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form input {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 2px solid #d6c4b5;
+    border-radius: 8px;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form__success {
+    display: none;
+    margin-top: 16px;
+    padding: 12px;
+    font-weight: bold;
+    color: #166534;
+    background-color: #dcfce7;
+    border-radius: 8px;
+}
+
+.form__success:target {
+    display: block;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+/* Footer */
+.footer {
+    padding: 24px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #d6c4b5;
+    background-color: var(--color-dark);
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .form {
+        flex-direction: row;
+    }
+
+    .form .btn {
+        flex-shrink: 0;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 900px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 112px 0;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero__text {
+        font-size: 20px;
+    }
+
+    .benefits__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
