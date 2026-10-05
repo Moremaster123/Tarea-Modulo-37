@@ -85,8 +85,28 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.header__nav > a:not(.btn) {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.header__nav > a:not(.btn):hover,
+.header__nav > a:not(.btn):focus {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
 }
 
 .logo {

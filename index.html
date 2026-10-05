@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Café Aurora: café de especialidad recién tostado, directo a tu puerta cada mes. Tu primera bolsa con 50% de descuento.">
+    <meta name="description" content="Suscríbete a Café Aurora: café mexicano de especialidad de Chiapas, Oaxaca y Veracruz, recién tostado y entregado en casa. Obtén 50% en tu primera bolsa.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="café de especialidad, café mexicano, suscripción de café, café de Chiapas, café de Oaxaca, café de Veracruz">
+    <link rel="canonical" href="https://moremaster123.github.io/Tarea-Modulo-37/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Café Aurora">
+    <meta property="og:title" content="Café Aurora | Café de especialidad a tu puerta">
+    <meta property="og:description" content="Suscríbete a Café Aurora: café mexicano de especialidad de Chiapas, Oaxaca y Veracruz, recién tostado y entregado en casa. Obtén 50% en tu primera bolsa.">
+    <meta property="og:url" content="https://moremaster123.github.io/Tarea-Modulo-37/">
     <title>Café Aurora | Café de especialidad a tu puerta</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container header__content">
-            <a href="#" class="logo">Café Aurora</a>
-            <a href="#suscripcion" class="btn btn--small">Quiero mi café</a>
+            <a href="#inicio" class="logo">Café Aurora</a>
+            <nav class="header__nav" aria-label="Navegación principal">
+                <a href="#beneficios">Beneficios</a>
+                <a href="#testimonio">Opiniones</a>
+                <a href="#suscripcion" class="btn btn--small">Quiero mi café</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="container hero__content">
                 <p class="hero__tag">Oferta de lanzamiento</p>
                 <h1>Café de especialidad recién tostado, directo a tu puerta</h1>
@@ -29,7 +42,7 @@
             </div>
         </section>
 
-        <section class="benefits">
+        <section class="benefits" id="beneficios">
             <div class="container">
                 <h2>¿Por qué elegir Café Aurora?</h2>
                 <ul class="benefits__list">
@@ -49,7 +62,7 @@
             </div>
         </section>
 
-        <section class="testimonial">
+        <section class="testimonial" id="testimonio">
             <div class="container">
                 <blockquote>
                     <p>“Desde que me suscribí no he vuelto a comprar café en el súper. Se nota la diferencia desde el primer sorbo.”</p>
