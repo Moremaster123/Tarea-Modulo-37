@@ -13,6 +13,11 @@
     <meta property="og:title" content="Café Aurora | Café de especialidad a tu puerta">
     <meta property="og:description" content="Suscríbete a Café Aurora: café mexicano de especialidad de Chiapas, Oaxaca y Veracruz, recién tostado y entregado en casa. Obtén 50% en tu primera bolsa.">
     <meta property="og:url" content="https://moremaster123.github.io/Tarea-Modulo-37/">
+    <meta property="og:image" content="https://moremaster123.github.io/Tarea-Modulo-37/img/cafe-aurora-social.png">
+    <meta property="og:image:alt" content="Café Aurora: café mexicano de especialidad recién tostado">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <title>Café Aurora | Café de especialidad a tu puerta</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,15 +35,18 @@
 
     <main>
         <section class="hero" id="inicio">
-            <div class="container hero__content">
-                <p class="hero__tag">Oferta de lanzamiento</p>
-                <h1>Café de especialidad recién tostado, directo a tu puerta</h1>
-                <p class="hero__text">
-                    Recibe cada mes granos seleccionados de productores mexicanos,
-                    tostados la misma semana en que llegan a tu taza.
-                </p>
-                <a href="#suscripcion" class="btn">Obtener 50% en mi primera bolsa</a>
-                <p class="hero__note">Sin plazos forzosos. Cancela cuando quieras.</p>
+            <div class="container hero__layout">
+                <div class="hero__content">
+                    <p class="hero__tag">Oferta de lanzamiento</p>
+                    <h1>Café de especialidad recién tostado, directo a tu puerta</h1>
+                    <p class="hero__text">
+                        Recibe cada mes granos seleccionados de productores mexicanos,
+                        tostados la misma semana en que llegan a tu taza.
+                    </p>
+                    <a href="#suscripcion" class="btn">Obtener 50% en mi primera bolsa</a>
+                    <p class="hero__note">Sin plazos forzosos. Cancela cuando quieras.</p>
+                </div>
+                <img class="hero__image" src="img/cafe-granos.svg" alt="Granos de café mexicano de especialidad recién tostados">
             </div>
         </section>
 
@@ -47,14 +55,17 @@
                 <h2>¿Por qué elegir Café Aurora?</h2>
                 <ul class="benefits__list">
                     <li class="card">
+                        <img class="card__image" src="img/frescura.svg" alt="Granos de café recién tostados para conservar su aroma">
                         <h3>Siempre fresco</h3>
                         <p>Tostamos tu café bajo pedido y lo enviamos en menos de 48 horas.</p>
                     </li>
                     <li class="card">
+                        <img class="card__image" src="img/origen.svg" alt="Cafetales mexicanos de Chiapas, Oaxaca y Veracruz">
                         <h3>Origen directo</h3>
                         <p>Trabajamos con fincas de Chiapas, Oaxaca y Veracruz a precio justo.</p>
                     </li>
                     <li class="card">
+                        <img class="card__image" src="img/molido.svg" alt="Café molido al gusto para preparar en casa">
                         <h3>A tu medida</h3>
                         <p>Elige el tipo de molido y la frecuencia de entrega que prefieras.</p>
                     </li>
@@ -88,6 +99,10 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Café Aurora. Proyecto de práctica del Módulo 37 de EBAC.</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/cafeaurora.mx/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/cafeaurora.mx/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </nav>
         </div>
     </footer>
 </body>
